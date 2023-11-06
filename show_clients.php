@@ -31,6 +31,7 @@ if (!$resultado) {
         <th>&emsp;Address &emsp;</th>
         <th>&emsp;Acc code &emsp;</th>
         <th>Income</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -47,12 +48,19 @@ if (!$resultado) {
             <td>&emsp;<?= $fila['address'] ?></td>
             <td>&emsp;<?= $fila['account_code'] ?></td>
             <td><?= $fila['income'] ?></td>
+            <td>
+                    <a href="update.php?id=<?= $fila['customer_id']?>">Update</a>
+                <a href="delete.php?id=<?= $fila['customer_id']?>">Delete</a>
+                <a href="increase.php?id=<?= $fila['customer_id']?>">Increase</a>
+                <a href="withdraw.php?id=<?= $fila['customer_id']?>">Withdraw</a>
         </tr>
         <?php
     }
     ?>
     </tbody>
 </table>
+
+<a href="create.html">Create</a>
 <?php
 ?>
 </body>

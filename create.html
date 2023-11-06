@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="margin: 20px">
+    <form
+    action="create_user.php"
+    method="post">
+        <p>Client Id (Self-Creating and autoincrementing)</p>
+        <p><span style="display: inline-block; width: 125px;">Name</span> <input name="name" type="text" maxlength="20"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Surname</span> <input name="surname" type="text" maxlength="20"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Second surname</span> <input name="second_surname" type="text" maxlength="20"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Tax id</span> <input name="dni" type="text" maxlength="9"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Phone</span> <input name="phone_number" type="text" maxlength="20"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Email</span> <input name="email" type="text" maxlength="40"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Address</span> <input name="address" type="text" maxlength="50"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Account number</span> <input name="account_code" type="text" maxlength="5"/> </p>
+        <p><span style="display: inline-block; width: 125px;">Income</span> <input name="income" type="number" max="999999"/> </p>
+        <br>
+        <button type="submit" style="color-scheme: dark">Add client</button>
+    </form>
+</body>
+</html>
